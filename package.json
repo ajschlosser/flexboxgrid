@@ -2,8 +2,8 @@
   "name": "sass-flexboxgrid",
   "version": "1.0.0",
   "description": "SASS compatible grid based off of CSS3 flexbox specification",
-  "style": "dist/flexboxgrid.css",
-  "main": "dist/flexboxgrid.css",
+  "style": "dist/sass-flexboxgrid.min.css",
+  "main": "dist/sass-flexboxgrid.min.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
