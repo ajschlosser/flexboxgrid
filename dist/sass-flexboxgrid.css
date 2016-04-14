@@ -1,7 +1,3 @@
-/**
- * Adapted by Aaron John Schlosser from flexboxgrid.css by Kristofer Joseph
- * The original CSS was removed and replaced with SASS
- */
 .container-fluid, .container {
   margin-right: auto;
   margin-left: auto; }
@@ -146,9 +142,10 @@
   -ms-flex-order: 1;
   order: 1; }
 
-.invisible-xs {
-  display: none;
-  visibility: hidden; }
+@media only screen and (max-width: 29) {
+  .invisible-xs {
+    display: none;
+    visibility: hidden; } }
 
 .visible-xs {
   display: block;
@@ -256,9 +253,10 @@
   -ms-flex-order: 1;
   order: 1; }
 
-.invisible-xs {
-  display: none;
-  visibility: hidden; }
+@media only screen and (max-width: 29) {
+  .invisible-xs {
+    display: none;
+    visibility: hidden; } }
 
 .visible-xs {
   display: block;
@@ -366,9 +364,10 @@
   -ms-flex-order: 1;
   order: 1; }
 
-.invisible-xs {
-  display: none;
-  visibility: hidden; }
+@media only screen and (max-width: 29) {
+  .invisible-xs {
+    display: none;
+    visibility: hidden; } }
 
 .visible-xs {
   display: block;
@@ -476,9 +475,10 @@
   -ms-flex-order: 1;
   order: 1; }
 
-.invisible-xs {
-  display: none;
-  visibility: hidden; }
+@media only screen and (max-width: 29) {
+  .invisible-xs {
+    display: none;
+    visibility: hidden; } }
 
 .visible-xs {
   display: block;
@@ -586,9 +586,10 @@
   -ms-flex-order: 1;
   order: 1; }
 
-.invisible-xs {
-  display: none;
-  visibility: hidden; }
+@media only screen and (max-width: 29) {
+  .invisible-xs {
+    display: none;
+    visibility: hidden; } }
 
 .visible-xs {
   display: block;
@@ -696,9 +697,10 @@
   -ms-flex-order: 1;
   order: 1; }
 
-.invisible-xs {
-  display: none;
-  visibility: hidden; }
+@media only screen and (max-width: 29) {
+  .invisible-xs {
+    display: none;
+    visibility: hidden; } }
 
 .visible-xs {
   display: block;
@@ -806,9 +808,10 @@
   -ms-flex-order: 1;
   order: 1; }
 
-.invisible-xs {
-  display: none;
-  visibility: hidden; }
+@media only screen and (max-width: 29) {
+  .invisible-xs {
+    display: none;
+    visibility: hidden; } }
 
 .visible-xs {
   display: block;
@@ -916,9 +919,10 @@
   -ms-flex-order: 1;
   order: 1; }
 
-.invisible-xs {
-  display: none;
-  visibility: hidden; }
+@media only screen and (max-width: 29) {
+  .invisible-xs {
+    display: none;
+    visibility: hidden; } }
 
 .visible-xs {
   display: block;
@@ -1026,9 +1030,10 @@
   -ms-flex-order: 1;
   order: 1; }
 
-.invisible-xs {
-  display: none;
-  visibility: hidden; }
+@media only screen and (max-width: 29) {
+  .invisible-xs {
+    display: none;
+    visibility: hidden; } }
 
 .visible-xs {
   display: block;
@@ -1136,9 +1141,10 @@
   -ms-flex-order: 1;
   order: 1; }
 
-.invisible-xs {
-  display: none;
-  visibility: hidden; }
+@media only screen and (max-width: 29) {
+  .invisible-xs {
+    display: none;
+    visibility: hidden; } }
 
 .visible-xs {
   display: block;
@@ -1246,9 +1252,10 @@
   -ms-flex-order: 1;
   order: 1; }
 
-.invisible-xs {
-  display: none;
-  visibility: hidden; }
+@media only screen and (max-width: 29) {
+  .invisible-xs {
+    display: none;
+    visibility: hidden; } }
 
 .visible-xs {
   display: block;
@@ -1356,15 +1363,16 @@
   -ms-flex-order: 1;
   order: 1; }
 
-.invisible-xs {
-  display: none;
-  visibility: hidden; }
+@media only screen and (max-width: 29) {
+  .invisible-xs {
+    display: none;
+    visibility: hidden; } }
 
 .visible-xs {
   display: block;
   visibility: visible; }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48) {
   .container {
     width: 49rem; }
   .col-sm {
@@ -1455,15 +1463,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 48) and (max-width: 47) {
   .invisible-sm {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 48) {
   .visible-sm {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48) {
   .container {
     width: 49rem; }
   .col-sm {
@@ -1554,15 +1566,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 48) and (max-width: 47) {
   .invisible-sm {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 48) {
   .visible-sm {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48) {
   .container {
     width: 49rem; }
   .col-sm {
@@ -1653,15 +1669,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 48) and (max-width: 47) {
   .invisible-sm {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 48) {
   .visible-sm {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48) {
   .container {
     width: 49rem; }
   .col-sm {
@@ -1752,15 +1772,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 48) and (max-width: 47) {
   .invisible-sm {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 48) {
   .visible-sm {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48) {
   .container {
     width: 49rem; }
   .col-sm {
@@ -1851,15 +1875,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 48) and (max-width: 47) {
   .invisible-sm {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 48) {
   .visible-sm {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48) {
   .container {
     width: 49rem; }
   .col-sm {
@@ -1950,15 +1978,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 48) and (max-width: 47) {
   .invisible-sm {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 48) {
   .visible-sm {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48) {
   .container {
     width: 49rem; }
   .col-sm {
@@ -2049,15 +2081,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 48) and (max-width: 47) {
   .invisible-sm {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 48) {
   .visible-sm {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48) {
   .container {
     width: 49rem; }
   .col-sm {
@@ -2148,15 +2184,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 48) and (max-width: 47) {
   .invisible-sm {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 48) {
   .visible-sm {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48) {
   .container {
     width: 49rem; }
   .col-sm {
@@ -2247,15 +2287,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 48) and (max-width: 47) {
   .invisible-sm {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 48) {
   .visible-sm {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48) {
   .container {
     width: 49rem; }
   .col-sm {
@@ -2346,15 +2390,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 48) and (max-width: 47) {
   .invisible-sm {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 48) {
   .visible-sm {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48) {
   .container {
     width: 49rem; }
   .col-sm {
@@ -2445,15 +2493,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 48) and (max-width: 47) {
   .invisible-sm {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 48) {
   .visible-sm {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48) {
   .container {
     width: 49rem; }
   .col-sm {
@@ -2544,15 +2596,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 48) and (max-width: 47) {
   .invisible-sm {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 48) {
   .visible-sm {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64) {
   .container {
     width: 65rem; }
   .col-md {
@@ -2643,15 +2699,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 64) and (max-width: 63) {
   .invisible-md {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 64) {
   .visible-md {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64) {
   .container {
     width: 65rem; }
   .col-md {
@@ -2742,15 +2802,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 64) and (max-width: 63) {
   .invisible-md {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 64) {
   .visible-md {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64) {
   .container {
     width: 65rem; }
   .col-md {
@@ -2841,15 +2905,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 64) and (max-width: 63) {
   .invisible-md {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 64) {
   .visible-md {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64) {
   .container {
     width: 65rem; }
   .col-md {
@@ -2940,15 +3008,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 64) and (max-width: 63) {
   .invisible-md {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 64) {
   .visible-md {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64) {
   .container {
     width: 65rem; }
   .col-md {
@@ -3039,15 +3111,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 64) and (max-width: 63) {
   .invisible-md {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 64) {
   .visible-md {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64) {
   .container {
     width: 65rem; }
   .col-md {
@@ -3138,15 +3214,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 64) and (max-width: 63) {
   .invisible-md {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 64) {
   .visible-md {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64) {
   .container {
     width: 65rem; }
   .col-md {
@@ -3237,15 +3317,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 64) and (max-width: 63) {
   .invisible-md {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 64) {
   .visible-md {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64) {
   .container {
     width: 65rem; }
   .col-md {
@@ -3336,15 +3420,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 64) and (max-width: 63) {
   .invisible-md {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 64) {
   .visible-md {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64) {
   .container {
     width: 65rem; }
   .col-md {
@@ -3435,15 +3523,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 64) and (max-width: 63) {
   .invisible-md {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 64) {
   .visible-md {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64) {
   .container {
     width: 65rem; }
   .col-md {
@@ -3534,15 +3626,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 64) and (max-width: 63) {
   .invisible-md {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 64) {
   .visible-md {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64) {
   .container {
     width: 65rem; }
   .col-md {
@@ -3633,15 +3729,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 64) and (max-width: 63) {
   .invisible-md {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 64) {
   .visible-md {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64) {
   .container {
     width: 65rem; }
   .col-md {
@@ -3732,15 +3832,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 64) and (max-width: 63) {
   .invisible-md {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 64) {
   .visible-md {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 75) {
   .container {
     width: 76rem; }
   .col-lg {
@@ -3831,15 +3935,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 75) and (max-width: 74) {
   .invisible-lg {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 75) {
   .visible-lg {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 75) {
   .container {
     width: 76rem; }
   .col-lg {
@@ -3930,15 +4038,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 75) and (max-width: 74) {
   .invisible-lg {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 75) {
   .visible-lg {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 75) {
   .container {
     width: 76rem; }
   .col-lg {
@@ -4029,15 +4141,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 75) and (max-width: 74) {
   .invisible-lg {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 75) {
   .visible-lg {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 75) {
   .container {
     width: 76rem; }
   .col-lg {
@@ -4128,15 +4244,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 75) and (max-width: 74) {
   .invisible-lg {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 75) {
   .visible-lg {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 75) {
   .container {
     width: 76rem; }
   .col-lg {
@@ -4227,15 +4347,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 75) and (max-width: 74) {
   .invisible-lg {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 75) {
   .visible-lg {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 75) {
   .container {
     width: 76rem; }
   .col-lg {
@@ -4326,15 +4450,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 75) and (max-width: 74) {
   .invisible-lg {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 75) {
   .visible-lg {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 75) {
   .container {
     width: 76rem; }
   .col-lg {
@@ -4425,15 +4553,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 75) and (max-width: 74) {
   .invisible-lg {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 75) {
   .visible-lg {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 75) {
   .container {
     width: 76rem; }
   .col-lg {
@@ -4524,15 +4656,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 75) and (max-width: 74) {
   .invisible-lg {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 75) {
   .visible-lg {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 75) {
   .container {
     width: 76rem; }
   .col-lg {
@@ -4623,15 +4759,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 75) and (max-width: 74) {
   .invisible-lg {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 75) {
   .visible-lg {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 75) {
   .container {
     width: 76rem; }
   .col-lg {
@@ -4722,15 +4862,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 75) and (max-width: 74) {
   .invisible-lg {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 75) {
   .visible-lg {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 75) {
   .container {
     width: 76rem; }
   .col-lg {
@@ -4821,15 +4965,19 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 75) and (max-width: 74) {
   .invisible-lg {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 75) {
   .visible-lg {
     display: block;
     visibility: visible; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 75) {
   .container {
     width: 76rem; }
   .col-lg {
@@ -4920,10 +5068,14 @@
     -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1; } }
+
+@media only screen and (min-width: 75) and (max-width: 74) {
   .invisible-lg {
     display: none;
-    visibility: hidden; }
+    visibility: hidden; } }
+
+@media only screen and (min-width: 75) {
   .visible-lg {
     display: block;
     visibility: visible; } }
