@@ -1,238 +1,238 @@
 /**
- * Adapted by Aaron John Schlosser from flexboxgrid.css by Kristofer Joseph
- * The original CSS was removed and replaced with SASS
- */
+* Adapted by Aaron John Schlosser from flexboxgrid.css by Kristofer Joseph
+* The original CSS was removed and replaced with SASS
+*/
 
- $gutter-width: 1rem;
- $outer-margin: 2rem;
- $xs-min: 30;
- $sm-min: 48;
- $md-min: 64;
- $lg-min: 75;
+$gutter-width: 1rem;
+$outer-margin: 2rem;
+$xs-min: 30;
+$sm-min: 48;
+$md-min: 64;
+$lg-min: 75;
 
- $container-sm: $sm-min + $gutter-width;
- $container-md: $md-min + $gutter-width;
- $container-lg: $lg-min + $gutter-width;
+$container-sm: $sm-min + $gutter-width;
+$container-md: $md-min + $gutter-width;
+$container-lg: $lg-min + $gutter-width;
 
- $sm-viewport: 'only screen and (min-width: 48em)';
- $md-viewport: 'only screen and (min-width: 64em)';
- $lg-viewport: 'only screen and (min-width: 75em)';
+$sm-viewport: 'only screen and (min-width: 48em)';
+$md-viewport: 'only screen and (min-width: 64em)';
+$lg-viewport: 'only screen and (min-width: 75em)';
 
- $flex-multiplier: 8.333333%;
+$flex-multiplier: 8.333333%;
 
- .container-fluid, .container {
-   margin-right: auto;
-   margin-left: auto;
- }
+.container-fluid, .container {
+  margin-right: auto;
+  margin-left: auto;
+}
 
- .container-fluid {
-   padding-right: var($outer-margin, 2rem);
-   padding-left: var($outer-margin, 2rem);
- }
+.container-fluid {
+  padding-right: var($outer-margin, 2rem);
+  padding-left: var($outer-margin, 2rem);
+}
 
- @mixin flex($grow, $shrink, $basis:auto) {
-   -webkit-box-flex: $grow;
-   -webkit-flex: $grow $shrink $basis;
-   -ms-flex: $grow $shrink $basis;
-   flex: $grow $shrink $basis;
- }
+@mixin flex($grow, $shrink, $basis:auto) {
+  -webkit-box-flex: $grow;
+  -webkit-flex: $grow $shrink $basis;
+  -ms-flex: $grow $shrink $basis;
+  flex: $grow $shrink $basis;
+}
 
- @mixin flex-grow($grow) {
-   -webkit-flex-grow: $grow;
-   -ms-flex-positive: $grow;
-   flex-grow: $grow;
- }
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+  -ms-flex-positive: $grow;
+  flex-grow: $grow;
+}
 
- @mixin flex-basis($basis) {
-   -webkit-flex-basis: $basis;
-   -ms-flex-preferred-size: $basis;
-   flex-basis: $basis;
- }
+@mixin flex-basis($basis) {
+  -webkit-flex-basis: $basis;
+  -ms-flex-preferred-size: $basis;
+  flex-basis: $basis;
+}
 
- @mixin flex-direction($direction) {
-   -webkit-flex-direction: $direction;
-   -ms-flex-direction: $direction;
-   flex-direction: $direction;
- }
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
 
- @mixin flex-wrap($wrap) {
-   -webkit-flex-wrap: $wrap;
-   -ms-flex-wrap: $wrap;
-   flex-wrap: $wrap;
- }
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
 
- @mixin box($orient, $direction) {
-   -webkit-box-orient: $orient;
-   -webkit-box-direction: $direction;
- }
+@mixin box($orient, $direction) {
+  -webkit-box-orient: $orient;
+  -webkit-box-direction: $direction;
+}
 
- @mixin display-flex {
-   display: -webkit-box;
-   display: -webkit-flex;
-   display: -ms-flexbox;
-   display: flex;
- }
+@mixin display-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 
- @mixin justify($justify) {
-   -webkit-box-pack: $justify;
-   -webkit-justify-content: flex- + $justify;
-   -ms-flex-pack: $justify;
-   justify-content: $justify;
-   text-align: start;
- }
+@mixin justify($justify) {
+  -webkit-box-pack: $justify;
+  -webkit-justify-content: flex- + $justify;
+  -ms-flex-pack: $justify;
+  justify-content: $justify;
+  text-align: start;
+}
 
- @mixin align($align) {
-   -webkit-box-align: $align;
-   -webkit-align-items: if($align == 'center', center, flex- + $align);
-   -ms-flex-align: $align;
-   align-items: if($align == 'center', center, flex- + $align);
- }
+@mixin align($align) {
+  -webkit-box-align: $align;
+  -webkit-align-items: if($align == 'center', center, flex- + $align);
+  -ms-flex-align: $align;
+  align-items: if($align == 'center', center, flex- + $align);
+}
 
- @mixin around {
-   -webkit-justify-content: space-around;
-   -ms-flex-pack: distribute;
-   justify-content: space-around;
- }
+@mixin around {
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
 
- @mixin between {
-   -webkit-box-pack: justify;
-   -webkit-justify-content: space-between;
-   -ms-flex-pack: justify;
-   justify-content: space-between;
- }
+@mixin between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 
- @mixin order($order) {
-   @if $order >= 0 {
-     $order: 1;
-   } @else if $order < 0 {
-     $order: -1
-   }
-   -webkit-box-ordinal-group: if($order == -1, 0, 2);
-   -webkit-order: $order;
-   -ms-flex-order: $order;
-   order: $order;
- }
+@mixin order($order) {
+  @if $order >= 0 {
+    $order: 1;
+  } @else if $order < 0 {
+    $order: -1
+  }
+  -webkit-box-ordinal-group: if($order == -1, 0, 2);
+  -webkit-order: $order;
+  -ms-flex-order: $order;
+  order: $order;
+}
 
- @mixin col {
-   box-sizing: border-box;
-   @include flex(0, 0);
-   padding-right: 0.5rem;
-   padding-left: 0.5rem;
- }
+@mixin col {
+  box-sizing: border-box;
+  @include flex(0, 0);
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
 
- @mixin container($size) {
-   @if $size == 'sm' {
-     width: $container-sm;
-   }
-   @else if $size == 'md' {
-     width: $container-md;
-   }
-   @else if $size == 'lg' {
-     width: $container-lg;
-   }
- }
+@mixin container($size) {
+  @if $size == 'sm' {
+    width: $container-sm;
+  }
+  @else if $size == 'md' {
+    width: $container-md;
+  }
+  @else if $size == 'lg' {
+    width: $container-lg;
+  }
+}
 
- @mixin media($size) {
-   @if $size == 'xs' {
-     @content;
-   }
-   @else if $size == 'sm' {
-     @media #{$sm-viewport} {
-       @content;
-     }
-   }
-   @else if $size == 'md' {
-     @media #{$md-viewport} {
-       @content;
-     }
-   }
-   @else if $size == 'lg' {
-     @media #{$lg-viewport} {
-       @content;
-     }
-   }
- }
+@mixin media($size) {
+  @if $size == 'xs' {
+    @content;
+  }
+  @else if $size == 'sm' {
+    @media #{$sm-viewport} {
+      @content;
+    }
+  }
+  @else if $size == 'md' {
+    @media #{$md-viewport} {
+      @content;
+    }
+  }
+  @else if $size == 'lg' {
+    @media #{$lg-viewport} {
+      @content;
+    }
+  }
+}
 
- .row {
-   box-sizing: border-box;
-   @include display-flex;
-   @include flex(0, 1);
-   @include box(horizontal, normal);
-   @include flex-direction(row);
-   @include flex-wrap(wrap);
-   margin-right: -0.5rem;
-   margin-left: -0.5rem;
-   .reverse {
-     @include box(horizontal, reverse);
-     @include flex-direction(row-reverse);
-   }
- }
+.row {
+  box-sizing: border-box;
+  @include display-flex;
+  @include flex(0, 1);
+  @include box(horizontal, normal);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+  .reverse {
+    @include box(horizontal, reverse);
+    @include flex-direction(row-reverse);
+  }
+}
 
- .col.reverse {
-   @include box(vertical, reverse);
-   @include flex-direction(column-reverse);
- }
+.col.reverse {
+  @include box(vertical, reverse);
+  @include flex-direction(column-reverse);
+}
 
- @each $size in xs, sm, md, lg {
-   @for $i from 1 through 12 {
-     @include media($size) {
-       .container {
-         @include container($size);
-       }
-       .col-#{$size} {
-         -webkit-box-flex: 1;
-         @include col;
-         @include flex-grow(1);
-         @include flex-basis(0);
-         max-width: 100%;
-       }
-       .col-#{$size}-#{$i} {
-         @include col;
-         @include flex-basis($flex-multiplier * $i);
-         max-width: $flex-multiplier * $i;
-       }
-       .col-#{$size}-offset-#{$i - 1} {
-         @include col;
-         margin-left: $flex-multiplier * $i;
-       }
-       .start-#{$size} {
-         @include justify(start);
-       }
-       .center-#{$size} {
-         @include justify(center);
-       }
-       .end-#{$size} {
-         @include justify(end);
-       }
-       .top-#{$size} {
-         @include align(start);
-       }
-       .middle-#{$size} {
-         @include align(center);
-       }
-       .bottom-#{$size} {
-         @include align(end);
-       }
-       .around-#{$size} {
-         @include around;
-       }
-       .between-#{$size} {
-         @include between
-       }
-       .first-#{$size} {
-         @include order(-1);
-       }
-       .last-#{$size} {
-         @include order(1);
-       }
-       .invisible-#{$size} {
-         display: none;
-         visibility: hidden;
-       }
-       .visible-#{$size} {
-         display: block;
-         visibility: visible;
-       }
-     }
-   }
- }
+@each $size in xs, sm, md, lg {
+  @for $i from 1 through 12 {
+    @include media($size) {
+      .container {
+        @include container($size);
+      }
+      .col-#{$size} {
+        -webkit-box-flex: 1;
+        @include col;
+        @include flex-grow(1);
+        @include flex-basis(0);
+        max-width: 100%;
+      }
+      .col-#{$size}-#{$i} {
+        @include col;
+        @include flex-basis($flex-multiplier * $i);
+        max-width: $flex-multiplier * $i;
+      }
+      .col-#{$size}-offset-#{$i - 1} {
+        @include col;
+        margin-left: $flex-multiplier * $i;
+      }
+      .start-#{$size} {
+        @include justify(start);
+      }
+      .center-#{$size} {
+        @include justify(center);
+      }
+      .end-#{$size} {
+        @include justify(end);
+      }
+      .top-#{$size} {
+        @include align(start);
+      }
+      .middle-#{$size} {
+        @include align(center);
+      }
+      .bottom-#{$size} {
+        @include align(end);
+      }
+      .around-#{$size} {
+        @include around;
+      }
+      .between-#{$size} {
+        @include between
+      }
+      .first-#{$size} {
+        @include order(-1);
+      }
+      .last-#{$size} {
+        @include order(1);
+      }
+      .invisible-#{$size} {
+        display: none;
+        visibility: hidden;
+      }
+      .visible-#{$size} {
+        display: block;
+        visibility: visible;
+      }
+    }
+  }
+}
