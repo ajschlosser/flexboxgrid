@@ -1,6 +1,6 @@
 {
   "name": "sass-flexboxgrid",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "SASS compatible grid based off of CSS3 flexbox specification",
   "style": "dist/sass-flexboxgrid.min.css",
   "main": "dist/sass-flexboxgrid.min.css",
