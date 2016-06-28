@@ -1,7 +1,7 @@
 /**
- * Adapted by Aaron John Schlosser from flexboxgrid.css by Kristofer Joseph
- * The original CSS was removed and replaced with SASS
- */
+* Adapted by Aaron John Schlosser from flexboxgrid.css by Kristofer Joseph
+* The original CSS was removed and replaced with SASS
+*/
 .container-fluid, .container {
   margin-right: auto;
   margin-left: auto; }

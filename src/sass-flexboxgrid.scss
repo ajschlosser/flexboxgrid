@@ -3,22 +3,7 @@
 * The original CSS was removed and replaced with SASS
 */
 
-$gutter-width: 1rem;
-$outer-margin: 2rem;
-$xs-min: 30;
-$sm-min: 48;
-$md-min: 64;
-$lg-min: 75;
-
-$container-sm: $sm-min + $gutter-width;
-$container-md: $md-min + $gutter-width;
-$container-lg: $lg-min + $gutter-width;
-
-$sm-viewport: 'only screen and (min-width: 48em)';
-$md-viewport: 'only screen and (min-width: 64em)';
-$lg-viewport: 'only screen and (min-width: 75em)';
-
-$flex-multiplier: 8.333333%;
+@import './variables.scss';
 
 .container-fluid, .container {
   margin-right: auto;
