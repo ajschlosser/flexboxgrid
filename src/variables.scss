@@ -5,13 +5,3 @@ $xs-min: 30;
 $sm-min: 48;
 $md-min: 64;
 $lg-min: 75;
-
-$container-sm: $sm-min + $gutter-width;
-$container-md: $md-min + $gutter-width;
-$container-lg: $lg-min + $gutter-width;
-
-$sm-viewport: 'only screen and (min-width: #{$sm-min}em)';
-$md-viewport: 'only screen and (min-width: #{$md-min}em)';
-$lg-viewport: 'only screen and (min-width: #{$lg-min}em)';
-
-$flex-multiplier: ((100 / $columns) * 1%);
