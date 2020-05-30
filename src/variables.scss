@@ -1,16 +1,7 @@
-$gutter-width: 1rem;
-$outer-margin: 2rem;
-$xs-min: 30;
-$sm-min: 48;
-$md-min: 64;
-$lg-min: 75;
-
-$container-sm: $sm-min + $gutter-width;
-$container-md: $md-min + $gutter-width;
-$container-lg: $lg-min + $gutter-width;
-
-$sm-viewport: 'only screen and (min-width: 48em)';
-$md-viewport: 'only screen and (min-width: 64em)';
-$lg-viewport: 'only screen and (min-width: 75em)';
-
-$flex-multiplier: 8.333333%;
+$columns: 12 !default;
+$gutter-width: 1rem !default;
+$outer-margin: 2rem !default;
+$xs-min: 30 !default;
+$sm-min: 48 !default;
+$md-min: 64 !default;
+$lg-min: 75 !default;

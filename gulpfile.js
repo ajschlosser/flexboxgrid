@@ -1,11 +1,18 @@
-var gulp    = require('gulp');
-var rename  = require('gulp-rename');
-var cssmin  = require('gulp-cssmin');
-var sass    = require('gulp-sass');
+var gulp     = require('gulp');
+var rename   = require('gulp-rename');
+var cssmin   = require('gulp-cssmin');
+var sass     = require('gulp-sass');
+var sasslint = require('gulp-sass-lint')
 
 gulp.task('styles', function(){
   return gulp.src('./src/sass-flexboxgrid.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sasslint())
+    .pipe(sasslint.format())
+    .pipe(sasslint.failOnError())
+    .pipe(sass({
+      outputStyle : 'expanded',
+      precision   : 5
+    }).on('error', sass.logError))
     .pipe(gulp.dest('./dist'));
 });
 
@@ -16,11 +23,11 @@ gulp.task('minify', function(){
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', ['styles', 'minify'], function() {
-  gulp.watch('./src/**/*.scss', ['styles', 'minify']);
-  setTimeout(function() {
-		console.info('Watching for changes...');
-	},200);
-});
+gulp.task('default', gulp.parallel(gulp.series('styles', 'minify'),
+  function () {
+    return gulp.watch('./src/**/*.scss', gulp.series('styles', 'minify'))
+  }
+));
 
-gulp.task('dist', ['styles', 'minify']);
+
+gulp.task('dist', gulp.series('styles', 'minify'));
